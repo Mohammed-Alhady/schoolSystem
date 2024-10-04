@@ -70,6 +70,8 @@
   width: 80%;
   max-width: 600px;
   transition: 0.5s;
+  max-height: 80vh;
+  overflow-y: scroll;
   & > .title {
     color: $primery;
     font-weight: bold;

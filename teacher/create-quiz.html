@@ -6,7 +6,7 @@
     <!-- fontaswesome -->
     <link
       rel="stylesheet"
-      href=" ../src/fontawesome-free-6.6.0-web/css/all.min.css"
+      href="../src/fontawesome-free-6.6.0-web/css/all.min.css"
     />
     <!-- bootstrap -->
     <link
@@ -23,8 +23,8 @@
       rel="stylesheet"
     />
     <!-- main css file -->
-    <link rel="stylesheet" href=" ../src/style/main.min.css" />
-    <title>school system</title>
+    <link rel="stylesheet" href="../src/style/main.min.css" />
+    <title>School System</title>
   </head>
   <body dir="rtl" class="main">
     <header class="header container">
@@ -32,62 +32,69 @@
         <div class="links-shower"><i class="fa-solid fa-bars"></i></div>
         <div class="links-holder">
           <span><i class="fa-solid fa-xmark"></i></span>
-          <a href=" ../index.html" class="link">الصفحة الرئيسية</a>
+          <a href="../index.html" class="link">الصفحة الرئيسية</a>
           <a href="students.html" class="link">الطلبة</a>
           <a href="grades.html" class="link">الدرجات</a>
           <a href="quizes.html" class="link active">الامتحانات</a>
         </div>
       </div>
       <div class="header--content">
-        <a href=" ../profile.html" class="user"
-          ><img src=" ../src/assets/images/user.jpg" class="logo"
+        <a href="../profile.html" class="user"
+          ><img src="../src/assets/images/user.jpg" class="logo"
         /></a>
-        <a href="  register.html" class="sign-out">تسجيل خروج</a>
+        <a href="register.html" class="sign-out">تسجيل خروج</a>
       </div>
     </header>
     <main class="create-quiz">
       <article class="create-questions">
         <div class="article-title">
-          <h1 class="title">مستخدمين النظام</h1>
+          <h1 class="title">إنشاء امتحان جديد</h1>
         </div>
         <div class="quiz-name">
           <input type="text" placeholder="اسم الامتحان" class="input-quiz" />
         </div>
         <div class="quiz-time">
-          <input type="number" placeholder="زمن الامتحان" class="input-quiz" />
+          <input
+            type="number"
+            placeholder="زمن الامتحان (بالدقائق)"
+            class="input-quiz"
+          />
         </div>
         <div class="questions-holder">
-          <button class="create-new-quesion">انشاء سؤال جديد</button>
-          <h3 class="title">الاسئلة</h3>
+          <button class="create-new-quesion">إنشاء سؤال جديد</button>
+          <h3 class="title">الأسئلة</h3>
+          <!-- Questions will be appended here -->
         </div>
+        <button class="save-quiz">حفظ الاختبار</button>
       </article>
     </main>
     <footer class="footer container">
-      <div>عدد الاسئلة <span class="questions-number"></span></div>
-      <div>عدد الدرجات <span class="grades-number"></span></div>
+      <div>عدد الأسئلة <span class="questions-number">0</span></div>
+      <div>عدد الدرجات <span class="grades-number">0</span></div>
     </footer>
     <div class="create-quesion">
-      <h2 class="title">انشاء سؤال جديد</h2>
+      <h2 class="title">إنشاء سؤال جديد</h2>
       <div class="question-body">
         <input type="text" placeholder="السؤال" class="q-name field" />
         <input type="number" placeholder="الدرجة" class="q-mark field" />
-        <select name="question-type" id="question-type" class="q-mark field">
+        <select name="question-type" id="question-type" class="field">
           <option value="" selected disabled hidden>نوع السؤال</option>
-          <option value="true-of-false">صح او خطا</option>
-          <option value="chose-the-correct">اختر الاجابة الصحيح</option>
-          <option value="fill-in-the-blank">اكمل مكان النقط</option>
+          <option value="true-of-false">صح أو خطأ</option>
+          <option value="chose-the-correct">اختر الإجابة الصحيحة</option>
+          <option value="fill-in-the-blank">أكمل مكان النقط</option>
         </select>
+        <!-- Correct answer input/select will be inserted here -->
         <div class="answers">
-          <input type="text" placeholder="الاجابة 1" class="field" />
+          <!-- Answer inputs will be appended here -->
         </div>
-        <button class="create-new-answer">انشاء اجابة جديدة</button>
+        <button class="create-new-answer">إنشاء إجابة جديدة</button>
       </div>
       <div class="card-footer">
-        <button class="btn create-quesion-btn">تاكيد</button>
+        <button class="btn create-quesion-btn">تأكيد</button>
         <button class="btn cancel-create-question red">إلغاء</button>
       </div>
     </div>
     <span class="layout"></span>
+    <script src="../src/js/main.js"></script>
   </body>
-  <script src="../src/js/main.js"></script>
 </html>
