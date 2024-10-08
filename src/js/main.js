@@ -11,6 +11,121 @@ const currentYear = new Date().getFullYear();
 const yearSpan = document.querySelector(".year");
 if (yearSpan) yearSpan.textContent = currentYear;
 
+// create task
+const taskholder = document.querySelector(".create-task");
+const taskBtn = document.querySelector(".create-task-btn");
+
+if (taskholder && taskBtn) {
+  const layout = document.querySelector(".layout");
+  taskBtn.onclick = () => {
+    taskholder.style.top = "50%";
+    layout.style.top = "50%";
+  };
+  document.querySelector(".cancel-task").onclick = () => {
+    taskholder.style.top = "-150%";
+    layout.style.top = "-150%";
+  };
+}
+
+// create service
+const serviceholder = document.querySelector(".create-service");
+const serviceBtn = document.querySelector(".create-service-btn");
+if (serviceholder && serviceBtn) {
+  const layout = document.querySelector(".layout");
+  serviceBtn.onclick = () => {
+    serviceholder.style.top = "50%";
+    layout.style.top = "50%";
+  };
+  document.querySelector(".cancel-servic").onclick = () => {
+    serviceholder.style.top = "-150%";
+    layout.style.top = "-150%";
+  };
+}
+
+// edit profile
+const editholder = document.querySelector(".edit-header");
+const editBtn = document.querySelector(".edit-btn");
+if (editholder && editBtn) {
+  const layout = document.querySelector(".layout");
+  editBtn.onclick = () => {
+    editholder.style.top = "50%";
+    layout.style.top = "50%";
+  };
+  document.querySelector(".cancel-edit").onclick = () => {
+    editholder.style.top = "-150%";
+    layout.style.top = "-150%";
+  };
+}
+
+// edit card
+const editCardholder = document.querySelector(".edit-card");
+const editCardBtn = document.querySelectorAll(".edit-card-btn");
+
+if (editCardholder && editCardBtn) {
+  const layout = document.querySelector(".layout");
+  editCardBtn.forEach((btn) => {
+    btn.onclick = () => {
+      editCardholder.style.top = "50%";
+      layout.style.top = "50%";
+    };
+  });
+  document.querySelector(".cancel-edit-card").onclick = () => {
+    editCardholder.style.top = "-150%";
+    layout.style.top = "-150%";
+  };
+}
+
+// delete card
+const deleteHolder = document.querySelector(".delete-card");
+const deleteBtn = document.querySelectorAll(".delete-btn");
+if (deleteHolder && deleteBtn) {
+  const layout = document.querySelector(".layout");
+  deleteBtn.forEach((btn) => {
+    btn.onclick = () => {
+      deleteHolder.style.top = "50%";
+      layout.style.top = "50%";
+    };
+  });
+  document.querySelector(".cancel-delete-card").onclick = () => {
+    deleteHolder.style.top = "-150%";
+    layout.style.top = "-150%";
+  };
+}
+
+// add card
+const addHolder = document.querySelector(".add-card");
+const addBtn = document.querySelectorAll(".add-btn");
+if (addHolder && addBtn) {
+  const layout = document.querySelector(".layout");
+  addBtn.forEach((btn) => {
+    btn.onclick = () => {
+      addHolder.style.top = "50%";
+      layout.style.top = "50%";
+    };
+  });
+  document.querySelector(".cancel-add-card").onclick = () => {
+    addHolder.style.top = "-150%";
+    layout.style.top = "-150%";
+  };
+}
+
+// status-card
+const statusHolder = document.querySelector(".status-card");
+const statusBtn = document.querySelectorAll(".status-btn");
+if (statusHolder && statusBtn) {
+  const layout = document.querySelector(".layout");
+  statusBtn.forEach((btn) => {
+    btn.onclick = () => {
+      statusHolder.style.top = "50%";
+      layout.style.top = "50%";
+    };
+  });
+  document.querySelector(".cancel-status-card").onclick = () => {
+    statusHolder.style.top = "-150%";
+    layout.style.top = "-150%";
+  };
+}
+
 // Create question modal functionality
 const layout = document.querySelector(".layout");
 const qholder = document.querySelector(".create-quesion");
